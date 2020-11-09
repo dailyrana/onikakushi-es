@@ -8,5 +8,5 @@ Por favor, reportarle cualquier error a Rena#5420 !
 # Creditos
 
 - GoddamBernkastel#8888 ~ Proofreading/Traducción/Edición de imágenes
--Rena#5420 ~ Proofreading/Traducción/Edición de imágenes
--lim_#2474 ~ Por el increíble apoyo a la hora de enviar todas las herramientas que necesitaba <3
+- Rena#5420 ~ Proofreading/Traducción/Edición de imágenes
+- lim_#2474 ~ Por el increíble apoyo a la hora de enviar todas las herramientas que necesitaba <3
