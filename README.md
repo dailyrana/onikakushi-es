@@ -1,8 +1,8 @@
 # Higurashi No Naku Koro Ni - Chapter 1 Onikakushi ~ Traducción en Español
 
-Por favor, reportarle cualquier error a Rena#5420 !
+Por favor, reportarle cualquier error a Rena#5420 via discord !
 
-# Instalar el parche via 07thmod
+# Como instalar el parche via 07thmod
 [placeholder]
 
 # Creditos
