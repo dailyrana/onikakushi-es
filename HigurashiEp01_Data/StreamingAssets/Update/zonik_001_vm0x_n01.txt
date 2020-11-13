@@ -149,7 +149,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300072", 256, TRUE);
 	OutputLine(NULL, "「レナもシカトすんなー！２人がラブラブだって村中に回覧板を」",
-		   NULL, "\"¡Hey, no me ignoren! Si lo hacen, ¡voy a colgar un cartel que diga que ustedes dos están locamente enamoradas, por toooda la villa!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"¡Hey, Rena! ¡Tú tampoco me ignores! Si lo haces, ¡voy a colgar un cartel que diga que ustedes dos están locamente enamoradas, por toooda la villa!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
