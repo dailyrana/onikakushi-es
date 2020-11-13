@@ -114,6 +114,6 @@ void dialog002()
 		   NULL, "\"¿Cuánto apuestan a que el almuerzo de Keiichi seguro no tiene nada más que bordes de pan, como el miserable plebeyo que es~?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400016", 256, TRUE);
 	OutputLine(NULL, "　さぁ恥ずかしがらずにお見せなさいな！ほらほら！」",
-		   NULL, " ¿Por qué no quieres abrirlo? Vamos, ¡no seas así!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ¿Por qué no nos lo enseñas? Vamos, ¡no tengas miedo!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

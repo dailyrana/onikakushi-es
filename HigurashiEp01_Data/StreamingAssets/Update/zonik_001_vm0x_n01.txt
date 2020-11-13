@@ -162,6 +162,6 @@ void dialog002()
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400016", 256, TRUE);
 		   NULL, "\"¿Cuánto apuestan a que el almuerzo de Keiichi-san seguro es nada más que un miserable arroz con un poco de algas~?", Line_WaitForInput);
 	OutputLine(NULL, "　さぁ恥ずかしがらずにお見せなさいな！ほらほら！」",
-		   NULL, " ¿Por qué no nos lo muestras? vamos, no seas así~\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ¿Por qué no nos lo enseñas? Vamos, no tengas miedo~\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
