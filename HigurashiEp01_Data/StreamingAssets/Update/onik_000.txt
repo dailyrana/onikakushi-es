@@ -274,7 +274,7 @@ void main()
 //　こんなにも...みじめな声で謝っているんだから......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんなにも…みじめな声で謝っているんだから……。",
-		   NULL, "No para de pedirte perdón con una voz tan... triste y lamentosa... ", Line_Normal);
+		   NULL, "No para de pedirte perdón con una voz tan... triste y lamentable... ", Line_Normal);
 	ClearMessage();
 
 //「圭一、そろそろ着くぞ＠起きなさい。＠
