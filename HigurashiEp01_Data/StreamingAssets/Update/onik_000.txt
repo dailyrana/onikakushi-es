@@ -54,7 +54,7 @@ void main()
 //　つい先月まで住んでいたにも関わらず、都会の賑やかさに圧倒された＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つい先月まで住んでいたにも関わらず、都会の賑やかさに圧倒された。",
-		   NULL, "A pesar de que esa vez estuve durante un mes, aún no logro acostumbrarme al ruido de la ciudad. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "A pesar de que esa vez estuve durante un mes, nunca pude acostumbrarme al ruido de la ciudad. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -75,20 +75,20 @@ void main()
 //　駅前での騒々しい選挙演説すらも今では懐かしかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　駅前での騒々しい選挙演説すらも今では懐かしかった。",
-		   NULL, "Incluso las campañas electorales gritando a todo volúmen en frente de la estación se sentían nostálgicas. ", Line_Normal);
+		   NULL, "Incluso esas campañas electorales a todo volúmen frente a la estación se me hacen nostálgicas. ", Line_Normal);
 	ClearMessage();
 
 //　今、住んでいる土地にはそんな賑やかなものはない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今、住んでいる土地にはそんな賑やかなものはない。",
-		   NULL, "El lugar donde ahora me mudé, no es tan vivo. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "El lugar donde ahora vivo, no es tan activo. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　あるのはセミの声と清流のせせらぎ＠そして、ひぐらしの声＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あるのはセミの声と清流のせせらぎ。",
-		   NULL, "Solo los cánticos de los grillos junto a esos estruendosos riachuelos se encuentran aquí. ", Line_WaitForInput);
+		   NULL, "Solo los cánticos de los grillos junto a esos estruendosos riachuelos se escuchan aquí. ", Line_WaitForInput);
 	OutputLine(NULL, "そして、ひぐらしの声。",
 		   NULL, "Y el llanto de las Higurashi—las cigarras del atardecer. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -110,14 +110,14 @@ void main()
 //　気の利いたハンバーガー屋はおろか、自動販売機すらない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　気の利いたハンバーガー屋はおろか、自動販売機すらない。",
-		   NULL, "No me refiero solo a que no hay hamburgueserías, directamente no hay ni máquinas expendedoras. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No me refiero a que no hay hamburgueserías, literalmente no hay ni máquinas expendedoras. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　レコード屋もないし、レストランもないし＠ゲームセンターもない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レコード屋もないし、レストランもないし、",
-		   NULL, "No hay tiendas de música, ni restaurantes. ", Line_WaitForInput);
+		   NULL, "No hay tiendas de música, ni restaurantes, ", Line_WaitForInput);
 	OutputLine(NULL, "ゲームセンターもない。",
 		   NULL, "ni salones recreativos. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -139,13 +139,13 @@ void main()
 //　だが、考えてみればそれに不便を感じる必要はなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、考えてみればそれに不便を感じる必要はなかった。",
-		   NULL, "Pero ahora que lo menciono, tampoco es para tanto. ", Line_Normal);
+		   NULL, "Pero ahora que lo pienso, no es la gran cosa. ", Line_Normal);
 	ClearMessage();
 
 //　前の町には確かにレコード屋もゲームセンターもアイスクリーム屋もあったが、別にそれらを頻繁に利用していたわけじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前の町には確かにレコード屋もゲームセンターもアイスクリーム屋もあったが、別にそれらを頻繁に利用していたわけじゃない。",
-		   NULL, "Habían hamburgueserías, salones recreativos, y heladerias, pero tampoco es como si fuese ahí todos los días. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Antes tenía hamburgueserías, salones recreativos, y heladerias, pero tampoco era como si fuese allí todos los días. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -173,7 +173,7 @@ void main()
 //　...誰かが、まだ謝り続けている￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…誰かが、まだ謝り続けている。",
-		   NULL, "Alguien sigue pidiendo perdón... ", Line_Normal);
+		   NULL, "Alguien sigue disculpándose. ", Line_Normal);
 	ClearMessage();
 
 //click
@@ -229,7 +229,7 @@ void main()
 //　...それでも彼女は謝り続けている￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それでも彼女は謝り続けている。",
-		   NULL, "Aún sigue disculpándose... ", Line_Normal);
+		   NULL, "Pero piense lo que piense... aún sigue disculpándose... ", Line_Normal);
 	ClearMessage();
 
 //　では...取り返しのつかない過ちを犯してしまったのだろうか￥
@@ -241,7 +241,7 @@ void main()
 //　一体彼女が何を犯したのか知らないが、取り返しがつかないものなら、なおのこと許してやるべきだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一体彼女が何を犯したのか知らないが、取り返しがつかないものなら、なおのこと許してやるべきだ。",
-		   NULL, "No tengo ni idea de que hizo, pero si ya no es como que se puede arreglar, entonces es otra razón por la cuál deberían perdonarla. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No tengo ni idea de que hizo, pero si perdón ya no arregla nada, entonces es aún más una razón por la cuál deberían perdonarla. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -274,7 +274,7 @@ void main()
 //　こんなにも...みじめな声で謝っているんだから......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんなにも…みじめな声で謝っているんだから……。",
-		   NULL, "Te sigue pidiendo perdón con una voz tan... triste... ", Line_Normal);
+		   NULL, "No para de pedirte perdón con una voz tan... triste y lamentosa... ", Line_Normal);
 	ClearMessage();
 
 //「圭一、そろそろ着くぞ＠起きなさい。＠
