@@ -3534,7 +3534,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200165", 256, TRUE);
 	OutputLine(NULL, "「ダムの工事をやってたんだってね。",
-		   NULL, "\"Creo que estaban construyendo un dique en este lugar. ", Line_WaitForInput);
+		   NULL, "\"Creo que estaban construyendo una presa en este lugar. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200166", 256, TRUE);
 	OutputLine(NULL, "詳しく知らないけど……はぅ…。」",
 		   NULL, "Aunque no estoy segura de los detalles... hau...\" ", GetGlobalFlag(GLinemodeSp));
