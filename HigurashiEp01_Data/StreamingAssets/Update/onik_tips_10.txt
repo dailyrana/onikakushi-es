@@ -1,0 +1,76 @@
+void main()
+{
+
+//■古手神社の神主の病死
+
+//*Sub_Tips_010
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	DrawScene("background/simen3", 1000 );
+	PlayBGM( 1, "msys07", 56, 0 );
+
+//　昭和５６年６月ＸＸ日夕刊よ＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和５６年６月ＸＸ日夕刊より",
+		   NULL, "Fragmento de la edición del XX de junio de 1981 ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　ＸＸ日午後１０時頃、鹿骨市雛見沢村Ｘ丁目、古手神社神主のＸＸＸＸさんが不調を訴え病院で手当てを受け一時は回復したが、深夜に容態が急変、死亡した￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　ＸＸ日午後１０時頃、鹿骨市雛見沢村Ｘ丁目、古手神社神主のＸＸＸＸさんが不調を訴え病院で手当てを受け一時は回復したが、深夜に容態が急変、死亡した。",
+		   NULL, "En la noche del XX, alrededor de las 10:00 p.m, en el distrito X de la aldea Hinamizawa en Shishibone, el sacerdote shinto del Templo Furude falleció después de recaer repentinamente en una enfermedad de la que se recuperaba. ", Line_Normal);
+	ClearMessage();
+
+
+//　関係者の話では、当日開催されていた祭りの準備等で相当の心労があったと言う＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　関係者の話では、当日開催されていた祭りの準備等で相当の心労があったと言う。",
+		   NULL, "Gente cercana al fallecido dice que sufría de ansiedad a causa del festival, el cual se celebraría ese mismo día. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　また、ＸＸＸＸさんの死亡直後、妻のＸＸＸＸさんが遺書を残し行方不明になった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、ＸＸＸＸさんの死亡直後、妻のＸＸＸＸさんが遺書を残し行方不明になった。",
+		   NULL, "Además, tras la muerte de XXXX, desapareció su esposa XXXX, quien dejó una carta de despedida. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　警察と青年団で捜索を続けているが、遺書で自殺をほのめかした鬼ヶ淵沼は地元では底なし沼として知られており難航している￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察と青年団で捜索を続けているが、遺書で自殺をほのめかした鬼ヶ淵沼は地元では底なし沼として知られており難航している。",
+		   NULL, "La policía y la asociación de jóvenes del lugar continúan la búsqueda. Sin embargo, han encontrado dificultades dada la presencia de la nota de despedida y el hecho de que se dice que Onigafuchi es un pantano sin fondo. ", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+//gosub *tip_e
+//return
+
+
+
+}
+
+
+
+
+
+

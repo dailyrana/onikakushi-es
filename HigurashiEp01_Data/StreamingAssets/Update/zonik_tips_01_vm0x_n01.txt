@@ -11,13 +11,13 @@ void dialog000()
 		   NULL, "\"¡Je! ", Line_Continue);
 	Wait( 1000 );
 	OutputLine(NULL, "　だが諦めろ。",
-		   NULL, "Ni lo sueñes, ", Line_WaitForInput);
+		   NULL, "Ni lo sueñes. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100005", 256, TRUE);
 	OutputLine(NULL, "俺に誕生日で挑もうったって無駄なことだ！！",
-		   NULL, "¡es imposible que seas más grande que yo! ", Line_WaitForInput);
+		   NULL, "¡Es imposible que seas más grande que yo! ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100006", 256, TRUE);
 	OutputLine(NULL, "　……何ならどっちが年上か、罰ゲームつきで勝負してもいいぜー！」",
-		   NULL, "Podemos competir por ver quien es el mayor, si quieres. El menor recibirá un castigo, obviamente\". ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si quieres, podemos competir por ver quien es el mayor. Pero el menor recibirá un castigo.\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -33,6 +33,6 @@ void dialog001()
 //　...うろたえ具合から今月の小遣いは残り少ないと断定する＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…うろたえ具合からそれほど勝算に自信がないものと断定する。",
-		   NULL, "Viendo la cantidad de pánico en su cara, pude asumir que ella no estaba muy convencida de poder ganarme. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Viendo lo asustada que está, estoy seguro de que no está muy convencida de poder ganarme. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

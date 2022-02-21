@@ -20,31 +20,31 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５４年６月ＸＸ日夕刊より",
-		   NULL, "De la edición del XX de Junio de 1979 ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Fragmento de la edición del XX de junio de 1979. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　鹿骨市興宮署はＸＸ日深夜＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鹿骨市興宮署はＸＸ日深夜、",
-		   NULL, "La ciudad de Shishibone, estación de policía de Okinomiya, Junio XX, a la tarde noche ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Medianoche del XX de junio en la estación de policía de Okinomiya en Ciudad Shishibone. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　建設作業員ＸＸＸＸ、ＸＸＸ、ＸＸＸＸ、ＸＸＸＸＸ、ＸＸＸＸを殺人、死体遺棄の容疑で逮捕し、逃走中の主犯格ＸＸＸＸを全国に指名手配した＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　建設作業員ＸＸＸＸ、ＸＸＸ、ＸＸＸＸ、ＸＸＸＸＸ、ＸＸＸＸを殺人、死体遺棄の容疑で逮捕し、逃走中の主犯格ＸＸＸＸを全国に指名手配した。",
-		   NULL, "Los sospechosos XXXX, XXX, XXXX, XXXXX y XXXX, fueron arrestados por sospecha de haber cometido asesinato, y haber intentado deshacerse de un cadáver. El principal agresor, XXXX, en varios países se le fue añadido a la lista de criminales buscados. ", Line_Normal);
+		   NULL, "Los sospechosos XXXX, XXX, XXXX, XXXXX, XXXX fueron puestos bajo custodia por presunto homicidio y manejo inapropiado de un cadáver. El agresor principal, XXXX, ha sido añadido a la lista de los más buscados a nivel nacional. ", Line_Normal);
 	ClearMessage();
 //文字数オーバーにつき画面外にテキストが出たため、@をページ送り処理に変更。
 
 //　調べによると、６容疑者はＸＸ日午後９時頃、雛見沢ダム建設現場内の作業事務所にて＠現場監督のＸＸＸＸさんを集団で暴行して殺害し、遺体を切断して遺棄した疑い￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　調べによると、６容疑者はＸＸ日午後９時頃、雛見沢ダム建設現場内の作業事務所にて、",
-		   NULL, "Acorde a nuestras fuentes, los seis sospechosos se encontraban en el área de trabajo de la presa en Hinamizawa el XX de Junio a las 9PM, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De acuerdo con nuestras fuentes, los seis sospechosos se encontraban en las oficinas de la construcción de la represa Hinamizawa el XX de junio a las 9:00 p.m, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現場監督のＸＸＸＸさんを集団で暴行して殺害し、遺体を切断して遺棄した疑い。",
-		   NULL, "lugar donde se cree que agredieron y asesinaron al supervisor de área, XXXX, en grupo desmembrando su cuerpo y escondiéndolo. ", Line_Normal);
+		   NULL, "donde se sospecha que atacaron al capataz XXXX en grupo, y desmembraron su cuerpo para ocultarlo. ", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 4, "wa_021", 56, 64 );
@@ -53,19 +53,19 @@ void main()
 //　ＸＸ日午前８時頃＠鹿骨市内の病院から警察へ、「ＸＸＸＸさんを殺害したことをほのめかす男性がいる」との通報があり＠警察官が駆けつけ事情を聞いたところ、事件を自供＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＸＸ日午前８時頃、",
-		   NULL, "El día XX de Junio a las ocho de la mañana, ", Line_WaitForInput);
+		   NULL, "El día XX a las 8:00 a.m, ", Line_WaitForInput);
 	OutputLine(NULL, "鹿骨市内の病院から警察へ、「ＸＸＸＸさんを殺害したことをほのめかす男性がいる」との通報があり、",
-		   NULL, "un reporte fue enviado de parte de el hopsital de Shishibone, donde un hombre sospechoso aludió a haber asesinado al Sr. XXXX. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "se hizo un reporte desde el hospital de Shishibone, en el cual uno de los sospechosos hizo alusión al asesinato del Sr. XXXX. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "警察官が駆けつけ事情を聞いたところ、事件を自供。",
-		   NULL, "Cuando la policía le hizo unas preguntas, el individuo confesó haber cometido el crímen. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Al ser interrogado en la estación de policía, el sujeto confesó el crimen. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　供述通りの場所から遺体の一部が発見されたため、同日午後、殺人、死体遺棄の容疑で逮捕した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　供述通りの場所から遺体の一部が発見されたため、同日午後、殺人、死体遺棄の容疑で逮捕した。",
-		   NULL, "Debido a que una porción del cuerpo fue recuperada en el lugar donde este mencionó, él fue arrestado bajo sospecha de haber asesinado y mutilado dicho cuerpo. ", Line_Normal);
+		   NULL, "La policía encontró parte del cadáver en la ubicación que dio el hombre. Lo arrestaron formalmente esa misma tarde bajo la sospecha de homicidio y mutilación de un cadáver. ", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 4, "wa_021", 56, 64 );
@@ -74,16 +74,16 @@ void main()
 //　他の容疑者も即日逮捕されたが、主犯格のＸＸＸＸは逃亡中＠警察は行方を追っている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　他の容疑者も即日逮捕されたが、主犯格のＸＸＸＸは逃亡中。",
-		   NULL, "El resto de los sospechosos fueron arrestados el mismo día, pero el principal culpable aún sigue prófugo. ", Line_WaitForInput);
+		   NULL, "Los demás los sospechosos fueron arrestados ese mismo día, pero el agresor principal se dio a la fuga. ", Line_WaitForInput);
 	OutputLine(NULL, "警察は行方を追っている。",
-		   NULL, "La policía actualmente se encuentra en busca de este criminal. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Las autoridades le siguen el rastro. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　動機につい＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　動機について",
-		   NULL, "El motivo pretende ser ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Parece que el motivo es: ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -91,7 +91,7 @@ void main()
 //　「酒盛りをとがめられ口論になり、カッとなって殺した＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「酒盛りをとがめられ口論になり、カッとなって殺した」",
-		   NULL, "\"Una discusión causada por el alcohol, donde este asesinó a la víctima en un ataque de ira\". ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Una disputa verbal bajo la influencia del alcohol, durante la cual cometió el asesinato por un ataque de ira.\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -99,7 +99,7 @@ void main()
 //　などと供述しているが、それぞれの自供に食い違いも多く、さらに追求するという￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　などと供述しているが、それぞれの自供に食い違いも多く、さらに追求するという。",
-		   NULL, "Sin embargo, hay múltiples inconsistencias con los testimonios. La investigación aún sigue en curso. ", Line_Normal);
+		   NULL, "Sin embargo, al haber varias inconsistencias en los testimonios, la investigación continúa. ", Line_Normal);
 	ClearMessage();
 
 	SetValidityOfInput( FALSE );

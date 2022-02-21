@@ -11,7 +11,7 @@ void dialog000()
 		   NULL, "\"Desde mi punto de vista, esa falda se ve mucho más fresca. ", Line_Continue);
 	Wait ( 1500 );
 	OutputLine(NULL, "この時期のズボンがどれだけ暑いか、女のお前にゃわかるまい！」",
-		   NULL, "¡Una chica como tú, nunca será capaz de entender que tan caliente se siente llevar jeans cuando hace calor!\" ", Line_Normal);
+		   NULL, "¡Una chica nunca será capaz de entender lo caliente que se siente llevar jeans con este clima!\" ", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "none");
@@ -21,6 +21,6 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200020", 256, TRUE);
 	OutputLine(NULL, "「……あ、…暑いって………、はぅ……。」",
-		   NULL, "\"Que tan... caliente... hauu...\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Estás... caliente... hauu...\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

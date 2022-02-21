@@ -7,34 +7,34 @@ void dialog000()
 //　魅音の目線が俺の胸元からつーっと下がって行き、!d400俺の下腹部に集まり始める＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の目線が俺の胸元からつーっと下がって行き、",
-		   NULL, "Los ojos de Mion se dirigieron hacia mi pecho, para luego irse para abajo, ", Line_Continue);
+		   NULL, "La mirada de Mion llegó a mi pecho y luego bajó en línea recta, ", Line_Continue);
 
 	Wait( 400 );
 
 	OutputLine(NULL, "俺の下腹部に集まり始める。",
-		   NULL, "centrándose en el punto donde se encuentra mi entrepierna. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "enfocándose en el punto entre mis piernas. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...前に会った時にあんなに可愛かったってのは俺の股間のことかよ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…前に会った時にあんなに可愛かったってのは俺の股間のことかよ。",
-		   NULL, "Por lo que, básicamente, estaba diciendo que eran mis genitales los que se veían tan lindos antes. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Así que está diciendo que lo que cuelga de ahí era más pequeñito en ese entonces. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　ちなみに断っておくが、見せた試しはないぞ。......念のため￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ちなみに断っておくが、見せた試しはないぞ。……念のため。",
-		   NULL, "Antes de preguntar, y solo para estar seguros; nunca antes intenté mostrárselo. ", Line_Normal);
+		   NULL, "Antes de que pregunten, solo para evitar malentendidos, nunca he intentado mostrárselo a Mion. ", Line_Normal);
 	ClearMessage();
 
 //「そうだよ立派になったぞ＠驚くぞ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだよ立派になったぞ。",
-		   NULL, "\"Ha crecido bastante, ", Line_WaitForInput);
+		   NULL, "\"He crecido espléndidamente. ", Line_WaitForInput);
 	OutputLine(NULL, "驚くぞ。」",
-		   NULL, "realmente te sorprendería\". ",  GetGlobalFlag(GLinemodeSp));
+		   NULL, "Te sorprenderías.\" ",  GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -45,54 +45,54 @@ void dialog000()
 //「たくましくなっちゃった上にヒゲまで生やしちゃってさぁ～☆＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「たくましくなっちゃった上にヒゲまで生やしちゃってさぁ〜☆」",
-		   NULL, "\"No solo está grandote, pero hasta tiene bigotito~☆\". ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"No solo está grandote, incluso tiene bigotito~.☆\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「毎朝、元気全開で大変なんだ＠今度見せてやるから挨拶してみろ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「毎朝、元気全開で大変なんだ。",
-		   NULL, "\"Aunque, el que esté tan enérgico cada mañana, da bastantes problemas... ", Line_WaitForInput);
+		   NULL, "\"Aunque estar tan *enérgico* cada mañana suele dar problemas. ", Line_WaitForInput);
 	OutputLine(NULL, "今度見せてやるから挨拶してみろ。」",
-		   NULL, "Algún día te lo presentaré, por lo que espero lo trates con cariño\". ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Los presentaré la próxima vez, asegúrate de tratarlo como se debe.\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「今度なんて言わないで今がいいなぁ＠朝の新鮮な空気を吸わせてあげたらぁ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「今度なんて言わないで今がいいなぁ。",
-		   NULL, "\"¿Cómo que algún día? Ahora mismo está bien ", Line_WaitForInput);
+		   NULL, "\"¿Cómo que 'la próxima'? En este momento está bien. ", Line_WaitForInput);
 	OutputLine(NULL, "朝の新鮮な空気を吸わせてあげたらぁ？」",
-		   NULL, "¿Qué tal si dejamos a nuestro amiguito tomar un poco de aire fresco?\" ", Line_Normal);
+		   NULL, "¿Qué tal si dejamos que el pequeñín respire algo de aire fresco?\" ", Line_Normal);
 	ClearMessage();
 
 
 //　朝の新鮮な空気をここまで台無しにする下品トークは聞いたことないぞ...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　朝の新鮮な空気をここまで台無しにする下品トークは聞いたことないぞ…。",
-		   NULL, "Creo que nunca antes había escuchado a Mion hablar de una forma tan sucia. Eran tales las palabras que salían de su boca, que hasta se podían oler de lejos ",  GetGlobalFlag(GLinemodeSp));
+		   NULL, "No creo haber escuchado una conversación tan sucia que pudiese olerla estropear el aire de la mañana... hasta ahora. ",  GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　魅音ってヤツはたまにノリにおっさんぽいところがあるのだ＠
 	OutputLine(NULL, "　魅音ってヤツはたまにノリにおっさんぽいところがあるのだ。",
-		   NULL, "Mion realmente habla como un viejo verde a veces. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion definitivamente actúa como un viejo pervertido algunas veces. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //「よしわかった＠大公開だ＠後悔するなよ...ッ？！？！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「よしわかった。",
-		   NULL, "\"Entendido, ", Line_WaitForInput);
+		   NULL, "\"A sus órdenes. ", Line_WaitForInput);
 	OutputLine(NULL, "大公開だ。",
-		   NULL, "hora de la gran revelación... ", Line_WaitForInput);
+		   NULL, "Hora de la gran revelación. ", Line_WaitForInput);
 	OutputLine(NULL, "後悔するなよ…ッ？！？！」",
-		   NULL, "¡Más te vale no arrepentirte!\" ", Line_Normal);
+		   NULL, "¡¡Espero que no te arrepientas...!!\" ", Line_Normal);
 	ClearMessage();
 
 //　俺がジッパーに手をかけたところで、レナが慌てふためきながらまくし立てた＠
 	OutputLine(NULL, "　俺がジッパーに手をかけたところで、レナが慌てふためきながらまくし立てた。",
-		   NULL, "Mientras mis manos se acercaban a mi bragueta, Rena empezó a alborotarse, casi entrando en pánico. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En lo que mi mano se acercaba a la bragueta, Rena empezó balbucear completamente sobresaltada. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -101,7 +101,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300072", 256, TRUE);
 	OutputLine(NULL, "「レナもシカトすんなー！２人がホテル街へ消えたって回覧板を」",
-		   NULL, "\"¡Hey, Rena! ¡Tú tampoco me ignores! Si lo haces, ¡voy a colgar un cartel que diga que desaparecieron y la última vez que se les vió, fue en el motel más cercano!\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"¡Oye, tampoco me ignores, Rena! ¡Pondré carteles por toda la aldea que digan que ustedes desaparecieron en la zona de los moteles!\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -111,9 +111,9 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400015", 256, TRUE);
 	OutputLine(NULL, "「圭一さんのお弁当はきっと貧乏臭くパンの耳に決まってますわ〜！",
-		   NULL, "\"¿Cuánto apuestan a que el almuerzo de Keiichi seguro no tiene nada más que bordes de pan, como el miserable plebeyo que es~? ", Line_WaitForInput);
+		   NULL, "\"¿Cuánto apuestan a que la lonchera de Keiichi-san está repleta de cortezas de pan como la de un pobre plebeyo~? ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400016", 256, TRUE);
 	OutputLine(NULL, "　さぁ恥ずかしがらずにお見せなさいな！ほらほら！」",
-		   NULL, "¿Por qué no nos lo enseñas? Vamos, ¡no tengas miedo!\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "¿Por qué no nos la muestra de una vez? ¡Rápido!\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

@@ -1,0 +1,281 @@
+void main()
+{
+
+//■捜査メモ
+
+//*Sub_Tips_014
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/ke5", "down", 0, 0, 1300 );
+	PlayBGM( 1, "msys13", 56, 0 );
+
+//　富竹ジロウ（仏＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　富竹ジロウ（仏）",
+		   NULL, "Jirou Tomitake (Fallecido) ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//・鹿骨市内の安ホテルに滞＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・鹿骨市内の安ホテルに滞在",
+		   NULL, "・Residía en un hotel barato en Ciudad Shishibone. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・宿帳に富竹ジロウと記＠　＞　ペンネー＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・宿帳に富竹ジロウと記名",
+		   NULL, "・Se registró con el nombre de Jirou Tomitake ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　ペンネーム",
+		   NULL, "> Seudónimo ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・折り畳み自転車で行動＠免許の類なし＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・折り畳み自転車で行動。",
+		   NULL, "・Se transportaba en una bicicleta plegable. ", Line_WaitForInput);
+	OutputLine(NULL, "免許の類なし。",
+		   NULL, "Sin licencia. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・ 自転車は現場から３００ｍ離れた林道脇に放置￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・自転車は現場から３００ｍ離れた林道脇に放置。",
+		   NULL, "・La bicicleta fue hallada a 300 metros de distancia, abandonada al lado de un sendero en el bosque. ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_021", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//・祭り当日、会場にいた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・祭り当日、会場にいた。",
+		   NULL, "・Presente el día del festival. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・失踪中の鷹野みよと一緒にいた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・失踪中の鷹野みよと一緒にいた。",
+		   NULL, "・Acompañado por la desaparecida: Miyo Takano. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・９時ごろに警察官が目撃。その後は不明￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・９時ごろに警察官が目撃。その後は不明。",
+		   NULL, "・Fue visto alrededor de las 9 pm por la policía. Se desconoce a dónde fue. ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_021", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//・雛見沢には５～６年前から、季節毎に１週間ほど滞在＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・雛見沢には５〜６年前から、季節毎に１週間ほど滞在。",
+		   NULL, "・Ha residido en Hinamizawa durante una semana de cada temporada por los últimos 5-6 años. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・野鳥専門のフリーカメラマ＠　＞　雑誌社調べろ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・野鳥専門のフリーカメラマン",
+		   NULL, "・Fotógrafo independiente especializado en aves silvestres ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　雑誌社調べろ！",
+		   NULL, "> ¡Revisar editoriales de revistas! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・遺品のフィルムには不審物な＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・遺品のフィルムには不審物なし",
+		   NULL, "・Nada sospechoso en el rollo de película que estaba entre sus pertenencias. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・遺品に財＠　＞　たんなる暴行＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・遺品に財布",
+		   NULL, "・El fallecido conservaba su billetera. ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　たんなる暴行？",
+		   NULL, "> ¿Violencia sin motivo? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・ 財布の内容物から、生活基盤は東京～千葉＠　国鉄総武線沿線￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・財布の内容物から、生活基盤は東京〜千葉？",
+		   NULL, "・A juzgar por el contenido de su billetera, pasaba la mayoría de su tiempo en Tokio y Chiba. ", Line_WaitForInput);
+	OutputLine(NULL, "　国鉄総武線沿線？",
+		   NULL, "¿Cerca a la línea nacional de trenes Sobu? ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_021", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//・都内各区の住民基本台帳に富竹ジロウの同姓同名な＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・都内各区の住民基本台帳に富竹ジロウの同姓同名なし",
+		   NULL, "No hay ningún individuo con el nombre 'Jirou Tomitake' en los registros residenciales de Tokio. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・歯型から都内歯科へ照＠　＞　警視庁＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・歯型から都内歯科へ照合",
+		   NULL, "・Comparar con los registros dentales de Tokio ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　警視庁へ",
+		   NULL, "> Enviar a la policía metropolitana ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・顔写真の送＠　＞　警視庁＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・顔写真の送付",
+		   NULL, "・Adjuntar una foto ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　警視庁へ",
+		   NULL, "> Enviar a la policía metropolitana ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・各雑誌社に富竹ジロウ問い合わ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・各雑誌社に富竹ジロウ問い合わせ",
+		   NULL, "・Indagar con las revistas respecto a 'Jirou Tomitake' ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_021", 56, 64 );
+
+//　鷹野みよ（失踪＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野みよ（失踪）",
+		   NULL, "Miyo Takano (Desaparecida) ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//・入江診療所に勤務の看護＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・入江診療所に勤務の看護師",
+		   NULL, "・Enfermera en la Clínica Irie ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・趣味の野鳥撮影で富竹と親し＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・趣味の野鳥撮影で富竹と親しい",
+		   NULL, "・Se volvió cercana a Tomitake debido a su pasión por fotografía de aves silvestres. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・自宅は興宮Ｘ丁目ＸＸＸ番地＠独身＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・自宅は興宮Ｘ丁目ＸＸＸ番地。",
+		   NULL, "・Reside en Okinomiya X distrito XXX. ", Line_WaitForInput);
+	OutputLine(NULL, "独身。",
+		   NULL, "Soltera. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・富竹と共に祭り会場で目撃され、その後行方不明￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・富竹と共に祭り会場で目撃され、その後行方不明。",
+		   NULL, "・Avistada acompañando a Tomitake en el festival. Continúa desaparecida. ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_021", 56, 64 );
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//・誘拐された＠　それとも容疑者＠　＞　重要参考人＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・誘拐された？",
+		   NULL, "・¿Secuestrada? ", Line_WaitForInput);
+	OutputLine(NULL, "　それとも容疑者？",
+		   NULL, "¿Tal vez una sospechosa? ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　重要参考人！",
+		   NULL, "> ¡Importante persona de interés! ", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//・仏を殺す動機がな＠　＞　痴情のもつれ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・仏を殺す動機がない",
+		   NULL, "・Sin motivos para asesinar al fallecido ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　痴情のもつれ？",
+		   NULL, "> ¿Ataque de celos? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・人間関係を徹底的に調べる＠　＞　勤務先＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・人間関係を徹底的に調べる！",
+		   NULL, "・¡Es necesario investigar a fondo su relación! ", Line_WaitForInput);
+	OutputLine(NULL, "　＞　勤務先他",
+		   NULL, "> Lugar de trabajo, etc. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//・ 会場警備の警察官に再度聞き込み＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・会場警備の警察官に再度聞き込み！",
+		   NULL, "・¡Necesito información de los policías en la escena de nuevo! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//・シュークリームが食べたいなぁ＠ジャンボで４つ＠＞　大￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "・シュークリームが食べたいなぁ。",
+		   NULL, "・Quiero comer profiteroles. ", Line_WaitForInput);
+	OutputLine(NULL, "ジャンボで４つ。",
+		   NULL, "Que sean cuatro jumbo. ", Line_WaitForInput);
+	OutputLine(NULL, "＞　大石",
+		   NULL, "> Ooishi ", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+}

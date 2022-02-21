@@ -1,0 +1,474 @@
+void main()
+{
+
+
+//■犯人は４人以上？
+
+//*Sub_Tips_013
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, TRUE );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	DrawScene("background/ke_ky1", 400 );
+	PlayBGM( 2, "lsys12", 56, 0 );
+
+//「自分で喉を掻き破った出血性ショック死＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200001", 256, TRUE);
+	OutputLine(NULL, "「自分で喉を掻き破った出血性ショック死。",
+		   NULL, "\"Muerte por choque hipovolémico inducido por el desgarre de la garganta. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　爪の間に肉や皮がびっしり詰まっとった＠他人の爪じゃない＠間違いなく本人の爪じゃわい＠傷の形も一致する。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200002", 256, TRUE);
+	OutputLine(NULL, "　爪の間に肉や皮がびっしり詰まっとった。",
+		   NULL, "Hay tejido acumulado bajo las uñas. ", Line_Continue);
+	OutputLine(NULL, "他人の爪じゃない。",
+		   NULL, "No fueron las uñas de alguien más. ", Line_Continue);
+	OutputLine(NULL, "間違いなく本人の爪じゃわい。",
+		   NULL, "Sin duda alguna fue con las uñas del sujeto. ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200003", 256, TRUE);
+	OutputLine(NULL, "傷の形も一致する。」",
+		   NULL, "La forma de las cicatrices también encaja.\" ", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 11, "sprite/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「えぇえぇ＠直接死因が自殺ってのはわかってますよ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700009", 256, TRUE);
+	OutputLine(NULL, "「えぇえぇ。",
+		   NULL, "\"Seeeh... ", Line_Continue);
+	OutputLine(NULL, "直接死因が自殺ってのはわかってますよ。」",
+		   NULL, "Sé que la causa directa de muerte fue suicidio.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「わかっとるわい＠人為的にこういう症状が起こせんかと言っとるんだろう？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200004", 256, TRUE);
+	OutputLine(NULL, "「わかっとるわい。",
+		   NULL, "\"Entiendo. ", Line_Continue);
+	OutputLine(NULL, "人為的にこういう症状が起こせんかと言っとるんだろう？」",
+		   NULL, "Está diciendo que la causa de muerte no es natural, ¿cierto?\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「背中が痒くて掻きすぎて、血が出ちゃうのとはちょっと訳がちがいますからねぇ。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700010", 256, TRUE);
+	OutputLine(NULL, "「背中が痒くて掻きすぎて、血が出ちゃうのとはちょっと訳がちがいますからねぇ。」",
+		   NULL, "\"Es parecido a cuando uno tiene comezón en la espalda y termina saliendo sangre por rascarse demasiado fuerte.\" ", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering(5, "black", "down", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+
+//　富竹氏の指には爪が剥がれたものもある＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　富竹氏の指には爪が剥がれたものもある。",
+		   NULL, "Algunas de las uñas de Tomitake estaban desprendidas. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　爪自体は割りと簡単に剥がれる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　爪自体は割りと簡単に剥がれる。",
+		   NULL, "Es relativamente fácil arrancarse las uñas. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だがとても痛い＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だがとても痛い。",
+		   NULL, "Pero duele bastante. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　だから普通は剥がれるような無茶はしない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから普通は剥がれるような無茶はしない。",
+		   NULL, "En circunstancias normales, el dolor impediría que alguien se las arrancase por completo. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そして、富竹氏の遺体に残る数々のアザ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、富竹氏の遺体に残る数々のアザ。",
+		   NULL, "Además, el cuerpo de Tomitake tenía muchas heridas. ", Line_Normal);
+	ClearMessage();
+//長文のため＠を￥にチェンジ
+
+//　...形状その他から素手の暴行によるもの、それも複数人に囲まれてであることは明白だ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…形状その他から素手の暴行によるもの、それも複数人に囲まれてであることは明白だ。",
+		   NULL, "...Por la forma de estas queda claro que primero fue atacado por una o varias personas. ", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 5, "up", 0, FALSE, 0, 0, 1300, TRUE );
+
+//「分泌物から見て、仏は極度の興奮状態にあったのは間違いないのう。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200005", 256, TRUE);
+	OutputLine(NULL, "「分泌物から見て、仏は極度の興奮状態にあったのは間違いないのう。」",
+		   NULL, "\"Según el reporte de toxicología, el fallecido estaba en un estado de histeria extrema justo antes de su muerte.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(3, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「では乱闘になって、興奮のあまり自分の喉を引っ掻きだしたってことですか＠　襲った連中、さぞや度肝を抜かれたでしょうなぁ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700011", 256, TRUE);
+	OutputLine(NULL, "「では乱闘になって、興奮のあまり自分の喉を引っ掻きだしたってことですか？",
+		   NULL, "\"¿Entonces se defendió y se desgarró su propia garganta por la histeria que le causó? ", Line_Continue);
+	OutputLine(NULL, "　襲った連中、さぞや度肝を抜かれたでしょうなぁ。」",
+		   NULL, "Los atacantes debieron haberse sorprendido mucho al ver eso.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　確かに異常な環境で異常に興奮した人間は、健常者には考えられない行動を取ることはありえる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かに異常な環境で異常に興奮した人間は、健常者には考えられない行動を取ることはありえる。",
+		   NULL, "Es posible que una persona en un ambiente tan irregular sea capaz de hacer cosas que alguien cuerdo no podría ni imaginar. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　無論、極めて稀有なケースだが￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　無論、極めて稀有なケースだが。",
+		   NULL, "Por supuesto, son casos excepcionales. ", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask("background/ke_ky2", "left", 0, 0, 300 );
+
+//「実はな、大石くん＠仏が武器にしたらしい角材な＠砂粒とかガードレールの塗装片とかそんなのしか出んかったぞい。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200006", 256, TRUE);
+	OutputLine(NULL, "「実はな、大石くん。",
+		   NULL, "\"Por cierto, Ooishi-kun, ", Line_Continue);
+	OutputLine(NULL, "仏が武器にしたらしい角材な。",
+		   NULL, "¿recuerdas la tabla que el fallecido utilizó como arma? ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200007", 256, TRUE);
+	OutputLine(NULL, "砂粒とかガードレールの塗装片とかそんなのしか出んかったぞい。」",
+		   NULL, "Solo encontraron arena y pintura de la barandilla en ella.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「ホシの服の繊維とか、皮膚片とかは？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700012", 256, TRUE);
+	OutputLine(NULL, "「ホシの服の繊維とか、皮膚片とかは？」",
+		   NULL, "\"¿No tenía fibras de tela o piel?\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「出んかった＠仏は犯人を殴っとらん＠...あるいは殴った角材を、ホシが持ち去ったのかも知れんの。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200008", 256, TRUE);
+	OutputLine(NULL, "「出んかった。",
+		   NULL, "\"Nada. ", Line_Continue);
+	Wait( 1800 );
+	OutputLine(NULL, "仏は犯人を殴っとらん。",
+		   NULL, "El fallecido no golpeó a los asaltantes... ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200009", 256, TRUE);
+	OutputLine(NULL, "…あるいは殴った角材を、ホシが持ち去ったのかも知れんの。」",
+		   NULL, "O puede ser que hayan tomado la tabla con la que se estaba defendiendo.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「なら、わざわざ角材なんて置いてきませんよ＠全部持ってっちゃいます。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700013", 256, TRUE);
+	OutputLine(NULL, "「なら、わざわざ角材なんて置いてきませんよ。",
+		   NULL, "\"Si ese fuera el caso, no se habrían molestado en reemplazarla por otra. ", Line_Continue);
+	OutputLine(NULL, "全部持ってっちゃいます。」",
+		   NULL, "Se las llevarían todas.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「かっかっかっか＠　それもそうじゃのう。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200010", 256, TRUE);
+	OutputLine(NULL, "「かっかっかっか！",
+		   NULL, "\"¡Jua, jua, jua, jua! ", Line_Continue);
+	OutputLine(NULL, "　それもそうじゃのう。」",
+		   NULL, "Muy cierto.\" ", Line_Normal);
+	ClearMessage();
+
+//「富竹氏は結構、体格もいいし肌も焼けてるし＠...スポーツマンですよねぇ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700014", 256, TRUE);
+	OutputLine(NULL, "「富竹氏は結構、体格もいいし肌も焼けてるし。",
+		   NULL, "\"Tomitake era muy fornido y estaba bronceado... ", Line_Continue);
+	OutputLine(NULL, "…スポーツマンですよねぇ。」",
+		   NULL, "Era bastante atlético.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「ん＠　そうだな＠よく運動しとるようだの。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200011", 256, TRUE);
+	OutputLine(NULL, "「ん？",
+		   NULL, "\"¿Hm? ", Line_Continue);
+	OutputLine(NULL, "　そうだな。",
+		   NULL, "Es cierto. ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200012", 256, TRUE);
+	OutputLine(NULL, "よく運動しとるようだの。」",
+		   NULL, "Era muy activo.\" ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBG("black", 1000, TRUE );
+	DrawFilm( 2, 119, 119, 119, 255, 0, 1000, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 8, "sprite/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//　...生前に何のスポーツを嗜んでいたか想像はつかないが、身体能力は高い方だと思う＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…生前に何のスポーツを嗜んでいたか想像はつかないが、身体能力は高い方だと思う。",
+		   NULL, "...No puedo imaginar qué clase de deportes practicaba cuando estaba vivo, pero creo que su fuerza física debió ser enorme. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　つまり、乱闘では決してひけを取らないはずなのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、乱闘では決してひけを取らないはずなのだ。",
+		   NULL, "Por lo que sería difícil someterlo en una pelea. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　これだけ体格のいい男が、身に危険が迫って、死に物狂いで武器を振り回して＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これだけ体格のいい男が、身に危険が迫って、死に物狂いで武器を振り回して。",
+		   NULL, "Si un hombre con tal físico se sintiera en peligro y diera un golpe con su arma... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　それが犯人にかすりもしないなんて、ちょっと普通では考えられない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それが犯人にかすりもしないなんて、ちょっと普通では考えられない。",
+		   NULL, "Es impensable que ni siquiera hiriese al perpetrador. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　しかも相手は素手＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　しかも相手は素手。",
+		   NULL, "Y su oponente estaba desarmado. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　こっちは角材なんだから、１回くらいは殴れたと思うのだが...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　こっちは角材なんだから、１回くらいは殴れたと思うのだが…。",
+		   NULL, "Este hombre tenía una tabla, uno creería que lo golpearía aunque fuera una vez... ", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 1000, TRUE );
+	FadeFilm( 1000, TRUE );
+	DrawScene("background/ke_ky1", 1000 );
+
+
+
+//「こんだけ体格のいい相手を取り囲んで襲おうとしたら＠...何人くらいいりますかねぇ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700015", 256, TRUE);
+	OutputLine(NULL, "「こんだけ体格のいい相手を取り囲んで襲おうとしたら、",
+		   NULL, "\"Me pregunto cuánta gente se necesitaría... ", Line_Continue);
+	OutputLine(NULL, "…何人くらいいりますかねぇ。」",
+		   NULL, "para rodear y someter a alguien con esta contextura.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「あほぅ＠それは大石くんの方が得意だろうが＠悪タレ時代を思い出さんかい！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200013", 256, TRUE);
+	OutputLine(NULL, "「あほぅ。",
+		   NULL, "\"Eres tonto. ", Line_Continue);
+	OutputLine(NULL, "それは大石くんの方が得意だろうが。",
+		   NULL, "Tú deberías saberlo mejor que nadie. ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200014", 256, TRUE);
+	OutputLine(NULL, "悪タレ時代を思い出さんかい！」",
+		   NULL, "¿Ya olvidaste tus días de 'Policía Malo'?\" ", Line_Normal);
+	ClearMessage();
+
+//　私が彼と喧嘩するなら何人ほしい＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が彼と喧嘩するなら何人ほしい？",
+		   NULL, "¿Si fuera a derribar a este sujeto, cuántas personas necesitaría? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　群が時に大型獣を倒すように、多人数で襲うのは狩りの鉄則だ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　群が時に大型獣を倒すように、多人数で襲うのは狩りの鉄則だ。",
+		   NULL, "Cuando un grupo quiere atrapar una presa grande, es importante superarla en número. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　......４人くらいはほしい＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……４人くらいはほしい。",
+		   NULL, "...Supongo que unos cuatro. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　多少の体格差があってもこれだけいればなんとかなる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　多少の体格差があってもこれだけいればなんとかなる。",
+		   NULL, "Incluso si hay diferencias en su fuerza física, se las arreglarían. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//「だとすると、結構犯人は多人数だの＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200015", 256, TRUE);
+	OutputLine(NULL, "「だとすると、結構犯人は多人数だの。",
+		   NULL, "\"Si es así, hay bastantes perpetradores. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　祭りで泥酔した４人以上のグループが怪しいとなるかの？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200016", 256, TRUE);
+	OutputLine(NULL, "　祭りで泥酔した４人以上のグループが怪しいとなるかの？」",
+		   NULL, "¿Hay algún grupo de cuatro o más borrachos que pareciera sospechoso en el festival?\" ", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　.........４人以上のグループ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………４人以上のグループ。",
+		   NULL, "...Un grupo de cuatro o más personas. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　しかし...それだけの人数がいれば、遺体をもっと目に付きにくいところに隠せなかっただろうか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　しかし…それだけの人数がいれば、遺体をもっと目に付きにくいところに隠せなかっただろうか？",
+		   NULL, "Es que... ¿De ser tantos, no habrían podido ocultar el cuerpo en un lugar menos obvio? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　あるいは...瀕死の状態で監禁されていたのをなんとか抜け出してきたのか...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あるいは…瀕死の状態で監禁されていたのをなんとか抜け出してきたのか…。",
+		   NULL, "O podría ser... que de algún modo hubiese escapado de esa terrible situación... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だとしたら自殺する理由がわからない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だとしたら自殺する理由がわからない。",
+		   NULL, "Pero entonces no habría razón para cometer suicidio. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　それ以上に、あの異常な死に方の理由がわからない......＠謎だらけだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それ以上に、あの異常な死に方の理由がわからない……。",
+		   NULL, "Y más importante, aún no puedo comprender por qué murió de una forma tan irregular... ", Line_WaitForInput);
+	OutputLine(NULL, "謎だらけだ。",
+		   NULL, "Son muchos misterios. ", Line_Normal);
+	ClearMessage();
+
+//「こっちもそこは重視しとる＠徹底的に調べるつもりだが...あまり期待できんな＠何しろ、過去にこんな例はないんだからな。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200017", 256, TRUE);
+	OutputLine(NULL, "「こっちもそこは重視しとる。",
+		   NULL, "\"También estoy considerando seriamente esa parte. ", Line_Continue);
+	OutputLine(NULL, "徹底的に調べるつもりだが…あまり期待できんな。",
+		   NULL, "Lo voy a examinar lo más meticulosamente posible, pero no te ilusiones. ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200018", 256, TRUE);
+	OutputLine(NULL, "何しろ、過去にこんな例はないんだからな。」",
+		   NULL, "Al fin y al cabo, nunca nos habíamos encontrado con una muerte así.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「期待はしませんよ＠ですが結果を楽しみにしてます。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700016", 256, TRUE);
+	OutputLine(NULL, "「期待はしませんよ。",
+		   NULL, "\"No tengo muchas esperanzas. ", Line_Continue);
+	OutputLine(NULL, "ですが結果を楽しみにしてます。」",
+		   NULL, "Pero esperaré con ansias los resultados.\" ", Line_Normal);
+	ClearMessage();
+
+//「大石さん～＠　課長が呼んでるっすー！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 19, "ps3/s20/19/443100001", 256, TRUE);
+	OutputLine(NULL, "「大石さん〜！",
+		   NULL, "\"¡Ooishi-san~! ", Line_Continue);
+	OutputLine(NULL, "　課長が呼んでるっすー！」",
+		   NULL, "¡El jefe lo está llamando!\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「すみません、ではまた来年お会いしましょう。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700017", 256, TRUE);
+	OutputLine(NULL, "「すみません、ではまた来年お会いしましょう。」",
+		   NULL, "\"Gracias. Nos vemos.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「おう＠いいお年をの！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Investigador Forense</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200019", 256, TRUE);
+	OutputLine(NULL, "「おう。",
+		   NULL, "\"Ajá. ", Line_Continue);
+	OutputLine(NULL, "いいお年をの！」",
+		   NULL, "¡Mis mejores deseos!\" ", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+//gosub *tip_e
+//return
+
+
+}

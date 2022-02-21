@@ -1,0 +1,22 @@
+void main()
+{
+}
+
+void dialog000()
+{
+//「さらに翌年＠綿流しの晩＠今度は神社の神主が原因不明の奇病で急死した＠奥さんはその晩の内に沼に入水自殺した。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800036", 256, TRUE);
+	OutputLine(NULL, "「さらに翌年。",
+		   NULL, "\"El año siguiente ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800037", 256, TRUE);
+	OutputLine(NULL, "綿流しの晩。",
+		   NULL, "en la noche del Watanagashi. ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800038", 256, TRUE);
+	OutputLine(NULL, "今度は神社の神主が原因不明で急死した。",
+		   NULL, "El sacerdote Shinto del templo murió repentinamente de una enfermedad desconocida. ", Line_WaitForInput);
+	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800039", 256, TRUE);
+	OutputLine(NULL, "奥さんはその晩の内に沼に入水自殺した。」",
+		   NULL, "Su esposa se ahogó en el pantano esa misma noche.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

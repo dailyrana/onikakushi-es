@@ -1,0 +1,365 @@
+void main()
+{
+
+
+//■週刊誌の特集記事
+
+//*Sub_Tips_006
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	DrawScene("background/simen3", 1000 );
+
+
+//locate 3,5
+
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 5 ); }
+	SetStyleOfMessageSwinging( 1 );
+//　雛見沢ダムで悪夢の惨劇＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢ダムで悪夢の惨劇！",
+		   NULL, "¡Horror en la represa Hinamizawa! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//locate 4,6
+
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+
+//　リンチ・バラバラ殺人￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　リンチ・バラバラ殺人！",
+		   NULL, "¡Linchamiento y asesinato/desmembramiento! ", Line_Normal);
+	ClearMessage();
+	SetStyleOfMessageSwinging( 0 );
+	PlayBGM( 1, "msys07", 56, 0 );
+
+//　Ｘ月Ｘ日、ＸＸ県鹿骨市の雛見沢ダム建設作業現場で起こった血も凍るバラバラ殺人＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　Ｘ月Ｘ日、ＸＸ県鹿骨市の雛見沢ダム建設作業現場で起こった血も凍るバラバラ殺人。",
+		   NULL, "El día XX del mes de XXX en la prefectura XXX ocurrió un perturbador asesinato/desmembramiento en las oficinas de la construcción de la represa Hinamizawa a las afueras de Shishibone. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　列島を震撼させたショッキングな事件でありながら、警察はその細部を語ろうとしていない...＠一体、雛見沢ダムで何が...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　列島を震撼させたショッキングな事件でありながら、警察はその細部を語ろうとしていない…。",
+		   NULL, "A pesar de que el caso ha causado gran impacto en el archipiélago, la policía no ha revelado los detalles... ", Line_WaitForInput);
+	OutputLine(NULL, "一体、雛見沢ダムで何が…？",
+		   NULL, "¿Qué ocurrió exactamente en la represa Hinamizawa...? ", Line_Normal);
+	ClearMessage();
+
+//「始めは殺すつもりはなかったのでしょう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「始めは殺すつもりはなかったのでしょう。",
+		   NULL, "\"Probablemente no querían matarlo al principio, ", Line_WaitForInput);
+	OutputLine(NULL, "　ですが被害者がシャベルを振り回して抵抗を始めると、加害者たちも一斉に得物を手にし、一気に殺し合いにエスカレートしたのです。」",
+		   NULL, "pero al defenderse con una pala hizo que los perpetradores se armaran también, por lo que rápidamente terminó en un homicidio.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　ですが被害者がシャベルを振り回して抵抗を始めると、加害者たちも一斉に得物を手にし、一気に殺し合いにエスカレートしたのです。＠と前述の捜査関係者Ａ氏は語る￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "と前述の捜査関係者Ａ氏は語る。",
+		   NULL, "Eso dijo el ya mencionado Investigador A. ", Line_Normal);
+	ClearMessage();
+
+//　血の惨劇が終われば、そこには誰の眼にも生きているとは思えない無残な屍...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　血の惨劇が終われば、そこには誰の眼にも生きているとは思えない無残な屍…。",
+		   NULL, "Una vez terminó el sangriento enfrentamiento, quedaron ellos y un cuerpo que sabían ya no vivía... ", Line_Normal);
+	ClearMessage();
+
+//　日頃から粗暴な振る舞いで容疑者たちをいじめていたＸＸさん＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　日頃から粗暴な振る舞いで容疑者たちをいじめていたＸＸさん。",
+		   NULL, "XXX-san había atormentado a los sospechosos a diario con su comportamiento abusivo. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　始めはちょっとした仕返しのつもりだった...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　始めはちょっとした仕返しのつもりだった…。",
+		   NULL, "Al principio tenían intención de vengarse... ", Line_Normal);
+	ClearMessage();
+
+//「加害者たちは皆、自らの罪深さに恐れおののきました＠警察へ出頭しようと言い出す者もいたのです。」
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「加害者たちは皆、自らの罪深さに恐れおののきました。",
+		   NULL, "\"Todos los perpetradores quedaron horrorizados por sus acciones, ", Line_WaitForInput);
+	OutputLine(NULL, "警察へ出頭しようと言い出す者もいたのです。」",
+		   NULL, "incluso uno de ellos se entregó a la policía.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だがリーダー格のＸＸだけは、死体を隠そうと提案した＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だがリーダー格のＸＸだけは、死体を隠そうと提案した。",
+		   NULL, "Fue el líder de facto del grupo, XXXX, quien sugirió ocultar el cuerpo. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//　始めは渋った彼らも、次第に捕まりたくないと思い始めるようになる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　始めは渋った彼らも、次第に捕まりたくないと思い始めるようになる。",
+		   NULL, "Estaban reacios al principio, pero rápidamente se dieron cuenta de que no querían ser atrapados. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　人数は６人いて死体を隠す方法がいくらでもある建設現場...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人数は６人いて死体を隠す方法がいくらでもある建設現場…。",
+		   NULL, "La construcción tenía muchos lugares en los que seis personas podrían esconder un cuerpo... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　彼らは揚々と死体を隠し、その場を離れるはずだった...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼らは揚々と死体を隠し、その場を離れるはずだった…。",
+		   NULL, "La idea original era esconder el cuerpo y abandonar la zona... ", Line_Normal);
+	ClearMessage();
+
+//「しかしリーダー格のＸＸは、他の５人が良心の呵責に耐えられなくなり＠自首して事件が発覚することを恐れ、恐るべき方法でその口封じを図ったのです。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「しかしリーダー格のＸＸは、他の５人が良心の呵責に耐えられなくなり、",
+		   NULL, "\"Pero el líder de facto temía que los otros cinco no pudiesen soportar el cargo de conciencia, ", Line_WaitForInput);
+	OutputLine(NULL, "自首して事件が発覚することを恐れ、恐るべき方法でその口封じを図ったのです。」",
+		   NULL, "y se le ocurrió un método horripilante para que no lo entregaran a la justicia...\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　なんとＸＸは死体を人数分に切断し、それぞれの責任で隠すという悪魔の方法を思いついたのである￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なんとＸＸは死体を人数分に切断し、それぞれの責任で隠すという悪魔の方法を思いついたのである。",
+		   NULL, "Tuvo la perversa idea de dividir el cuerpo entre todos y hacer que cada uno fuese responsable de ocultar su parte. ", Line_Normal);
+	ClearMessage();
+
+//「ＸＸは、単なる暴行致死でなくもっと恐ろしいバラバラ殺人に仕立て上げ、ひとりひとりを深く関与させることで結束を固めようとしたのです。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ＸＸは、単なる暴行致死でなくもっと恐ろしいバラバラ殺人に仕立て上げ、ひとりひとりを深く関与させることで結束を固めようとしたのです。」",
+		   NULL, "\"XXXX convirtió un simple homicidio en un espantoso desmembramiento para presionar a los otros perpetradores y generar una falsa sensación de unidad entre ellos.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　ひとりひとりを深く関与＠...これが意味するのは何なのか＠Ａ氏は重い口を開く￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ひとりひとりを深く関与。",
+		   NULL, "Todos participaron. ", Line_WaitForInput);
+	OutputLine(NULL, "…これが意味するのは何なのか。",
+		   NULL, "¿Qué significa eso? ", Line_WaitForInput);
+	OutputLine(NULL, "Ａ氏は重い口を開く。",
+		   NULL, "El Sr. A dijo reacio: ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_027", 56, 64 );
+
+//「ＸＸは、ひとりひとりに自らの手で遺体を切断するよう命じたのです＠彼らは始めは渋りましたが、結局誰も逆らえませんでした。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ＸＸは、ひとりひとりに自らの手で遺体を切断するよう命じたのです。",
+		   NULL, "\"XXXX le ordenó a todos y cada uno que cortaran su parte. ", Line_WaitForInput);
+	OutputLine(NULL, "彼らは始めは渋りましたが、結局誰も逆らえませんでした。」",
+		   NULL, "Dudaron al principio, pero nadie se rehusó.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　毒食らわば皿まで...ということなのか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　毒食らわば皿まで…ということなのか。",
+		   NULL, "Qué le hace una raya más al tigre'... eso significa. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　かくして、想像するのも躊躇われる恐るべき血の儀式が始まったのである￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　かくして、想像するのも躊躇われる恐るべき血の儀式が始まったのである。",
+		   NULL, "Y así, empezó una ceremonia sangrienta. ", Line_Normal);
+	ClearMessage();
+
+//「被害者たちは泣きながら嘔吐しながら、死体を切断しました＠頑強に抵抗する者もいましたが、ＸＸに『今さらもうひとり死んでも同じことだぞ。』と凄まれ、結局は抗えなかったのです。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「被害者たちは泣きながら嘔吐しながら、死体を切断しました。",
+		   NULL, "\"Los autores lloraron y vomitaron despedazando el cadáver. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "頑強に抵抗する者もいましたが、ＸＸに「今さらもうひとり死んでも同じことだぞ。」と凄まれ、結局は抗えなかったのです。」",
+		   NULL, "Uno de ellos se negó vehementemente, pero XXXX lo amenazó diciendo, 'Nada cambiaría si tenemos otro muerto,' y así detuvo sus objeciones.\" ", Line_Normal);
+	ClearMessage();
+
+//　だがＸＸの目論見はわずか一晩で崩れた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だがＸＸの目論見はわずか一晩で崩れた。",
+		   NULL, "Pero el plan de XXXX colapsó al pasar la noche. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　死体の切断に最後まで抵抗したＸＸＸが、乱闘時の傷の治療に訪れた病院で、泣き崩れながら告白したのである...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　死体の切断に最後まで抵抗したＸＸＸが、乱闘時の傷の治療に訪れた病院で、泣き崩れながら告白したのである…。",
+		   NULL, "XXX, quien se rehusó a desmembrar el cuerpo hasta el último segundo, rompió en llanto en las escaleras del hospital mientras le estaban tratando una herida causada en la pelea y confesó... ", Line_Normal);
+	ClearMessage();
+
+//　犯人たちは芋づる式に逮捕されたが、リーダー格のＸＸの行方だけは掴めていない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　犯人たちは芋づる式に逮捕されたが、リーダー格のＸＸの行方だけは掴めていない。",
+		   NULL, "Los criminales fueron arrestados uno tras otro, pero el paradero del líder, XXXX, se desconoce. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　また、ＸＸが隠した右腕部分も発見されていない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　また、ＸＸが隠した右腕部分も発見されていない。",
+		   NULL, "El brazo derecho que debía esconder XXXX tampoco ha sido encontrado. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　警察の連日の捜査にも関わらず、悪魔のような男が未だ法の手を逃れているのである＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察の連日の捜査にも関わらず、悪魔のような男が未だ法の手を逃れているのである。",
+		   NULL, "A pesar de una búsqueda exhaustiva, este diabólico hombre se las ha arreglado para evadir a la justicia. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　警察は何をしているのか...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察は何をしているのか…。",
+		   NULL, "¿Qué está haciendo la policía...? ", Line_Normal);
+	ClearMessage();
+
+//「ＸＸが死体（右腕）を沼に捨てに行くと言っていたらしいのです＠実際、沼の近くにＸＸの乗用車が乗り捨ててあったのですが、その後の足取りはまったくわかりません。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ＸＸが死体（右腕）を沼に捨てに行くと言っていたらしいのです。",
+		   NULL, "\"Parece ser que XXXX dijo que iba a tirar su parte (brazo derecho) en el pantano. ", Line_WaitForInput);
+	OutputLine(NULL, "実際、沼の近くにＸＸの乗用車が乗り捨ててあったのですが、その後の足取りはまったくわかりません。」",
+		   NULL, "El automóvil de XXXX fue descubierto abandonado en los alrededores del pantano, pero no había indicios de su paradero.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　仲間の裏切りを最後まで疑っていたＸＸ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　仲間の裏切りを最後まで疑っていたＸＸ。",
+		   NULL, "XXXX no confiaba en sus compañeros. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　仲間が警察に自供することを見越して、沼以外の場所に逃れた可能性は拭いきれない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　仲間が警察に自供することを見越して、沼以外の場所に逃れた可能性は拭いきれない。",
+		   NULL, "No se puede negar la posibilidad de que se haya anticipado a la confesión de uno de los coautores y que utilizara su auto como señuelo. ", Line_Normal);
+	ClearMessage();
+
+//「もちろんそれも疑っています＠...車はないはずなので、逃げられる範囲にも限度があると思うのですが...＠署内では、死体を捨てる時に誤って自分も沼に溺れてしまったのではないかと囁かれています...。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「もちろんそれも疑っています。",
+		   NULL, "\"Por supuesto, dudo de esa teoría. ", Line_WaitForInput);
+	OutputLine(NULL, "…車はないはずなので、逃げられる範囲にも限度があると思うのですが…。",
+		   NULL, "Al no tener auto, uno esperaría que se limitase el área a la que podría escapar. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "署内では、死体を捨てる時に誤って自分も沼に溺れてしまったのではないかと囁かれています…。」",
+		   NULL, "Pero en la estación de policía corre el rumor de que cayó al pantano y se ahogó mientras intentaba deshacerse del cuerpo.\" ", Line_Normal);
+	ClearMessage();
+
+//　この沼、地元では底なし沼と恐れられ＠その名を鬼ヶ淵と言い、沼の底の底は地獄の鬼の国につながっているのだという＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この沼、地元では底なし沼と恐れられ、",
+		   NULL, "Los nativos creen que es un pantano sin fondo. ", Line_WaitForInput);
+	OutputLine(NULL, "その名を鬼ヶ淵と言い、沼の底の底は地獄の鬼の国につながっているのだという。",
+		   NULL, "Se le conoce como Onigafuchi, 'La Fosa del Demonio,' y se dice que el fondo del pantano está conectado al mismísimo infierno. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　まさに地獄の鬼とも言える残虐非道のＸＸ＠まさか沼から元の地獄へ帰ったのでは...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まさに地獄の鬼とも言える残虐非道のＸＸ。",
+		   NULL, "El atroz demonio que era XXXX. ", Line_WaitForInput);
+	OutputLine(NULL, "まさか沼から元の地獄へ帰ったのでは…？",
+		   NULL, "¿Es posible que haya vuelto al infierno por medio del pantano...? ", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 4, "wa_029", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
+
+//　超運と勝利を招く紫金龍＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　超運と勝利を招く紫金龍！",
+		   NULL, "¡El Dragón Zijin te traerá suerte y fortuna! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　金運将＠・女運飛＠・事業発＠・立身出＠・権力掌＠・厄除護＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　金運将来",
+		   NULL, "-¡Un futuro próspero!- ", Line_WaitForInput);
+	OutputLine(NULL, "・女運飛躍",
+		   NULL, "-¡Suerte con las mujeres!- ", Line_WaitForInput);
+	OutputLine(NULL, "・事業発展",
+		   NULL, "-¡Éxito en los negocios!- ", Line_WaitForInput);
+	OutputLine(NULL, "・立身出世",
+		   NULL, "-¡Ascensos!- ", Line_WaitForInput);
+	OutputLine(NULL, "・権力掌握",
+		   NULL, "-¡Poder!- ", Line_WaitForInput);
+	OutputLine(NULL, "・厄除護身",
+		   NULL, "-¡Protección contra todo mal!- ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　パチンコや競馬などの賭け事はもとより、ビジネスから恋愛まで...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　パチンコや競馬などの賭け事はもとより、ビジネスから恋愛まで…。",
+		   NULL, "No solo con el pachinko y las carreras de caballos, también en los negocios e incluso en el amor... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　効果がなければ全額お返しします＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　効果がなければ全額お返しします！",
+		   NULL, "¡Si no funciona le devolvemos su dinero! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　紫金龍ブレスレットＤＸ（一括＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　紫金龍ブレスレットＤＸ（一括）",
+		   NULL, "Brazalete del Dragón Zijin DX (Una pieza) ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　２７，８００￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　２７，８００円",
+		   NULL, "27.800 Yenes ", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+
+}
