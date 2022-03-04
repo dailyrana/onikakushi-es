@@ -2,7 +2,7 @@
 
 Este repositorio contiene los archivos necesarios para traducir al español el parche realizado por 07th-Mod para Onikakushi.
 
-Por favor, reportarle cualquier error a Rena#5420 via discord.
+Por favor, reportar cualquier error en el canal #errores en nuestro discord: https://discord.gg/urDawUn4Nq 
 
 # Versiones del mod
 
