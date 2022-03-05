@@ -9,6 +9,7 @@ Por favor, reportar cualquier error en el canal #errores en nuestro discord: htt
 https://github.com/dailyrana/onikakushi-es/releases
 
 # Instalación
+*Si es necesario usar una guía con imágenes, dirigirse a la guía de steam; https://steamcommunity.com/sharedfiles/filedetails/?id=2764742715
 
 - Instala 07th-Mod para tu juego desde su página oficial.
 - Descarga la última versión de este mod en la página de versiones. Opción "Source code (zip)".
