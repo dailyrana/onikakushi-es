@@ -8,7 +8,7 @@ Por favor, reportar cualquier error en el canal #errores en nuestro discord: htt
 
 https://github.com/dailyrana/onikakushi-es/releases
 
-# Instalación
+# Instalación manual
 *Si es necesario usar una guía con imágenes, dirigirse a la guía de steam; https://steamcommunity.com/sharedfiles/filedetails/?id=2764742715
 
 - Instala 07th-Mod para tu juego desde su página oficial.
@@ -17,6 +17,7 @@ https://github.com/dailyrana/onikakushi-es/releases
 - Copia la carpeta "StreamingAssets" y los archivos sharedassets0.assets, resources.assets y tips.json.
 - Ve a la ruta de instalación del juego, puede que tengas la versión de Steam o la de GOG. Por lo general son: "C:\Program Files (x86)\Steam\steamapps\common\Higurashi When They Cry\HigurashiEp01_Data" o "C:\Program Files (x86)\GOG Galaxy\Games\Higurashi When They Cry Hou - Ch.1 Onikakushi\HigurashiEp01_Data" respectivamente.
 - Pega allí los archivos. Si pide que reemplaces los archivos, hazlo.
+- Elimina la carpeta "CompiledUpdateScripts" dentro de "HigurashiEp01_Data\StreamingAssets\CompiledUpdateScripts"
 - Ahora todo está listo. ¡A disfrutar del primer arco de Higurashi no naku koro ni totalmente en español!
 
 # Creditos
