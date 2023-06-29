@@ -424,7 +424,7 @@ void main()
 //　俺の中の一粒の勇気、蛮勇が、俺に叫びをあげさせるというもっとも原始的かつ、今のこの状況を解決するのに相応しい力を与えてくれた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の中の一粒の勇気、蛮勇が、俺に叫びをあげさせるというもっとも原始的かつ、今のこの状況を解決するのに相応しい力を与えてくれた。",
-		   NULL, "Una pequeña pizca de coraje en mi interior evocó una primitiva pero útil solución para mi predicamento: un grito. ", Line_Normal);
+		   NULL, "Una pequeña pizca de coraje en mi interior evocó una primitiva pero útil solución para mi apuro: un grito. ", Line_Normal);
 	ClearMessage();
 
 //　全身全霊の力を肺から、喉から解放し、脳内の全ての思考を切断する＠
@@ -670,7 +670,7 @@ void main()
 //　いずれの攻撃も敵には当たらなかったが、俺の激情は確かにぶち当たったようだった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いずれの攻撃も敵には当たらなかったが、俺の激情は確かにぶち当たったようだった。",
-		   NULL, "Ninguno de mis ataques daño al enemigo, pero mi ferocidad pareció impactarle. ", Line_Normal);
+		   NULL, "Ninguno de mis ataques dañó al enemigo, pero mi ferocidad pareció impactarle. ", Line_Normal);
 	ClearMessage();
 
 //　俺が肩で息をし、全身を熱い汗でぬらす頃には、あの、いないけどいる見えない敵は霧散していた＠
@@ -1277,7 +1277,7 @@ void main()
 	OutputLine(NULL, "　親父は芸術家特有のガラスのアイデンティティ、秋の空のような変わり易い感情の持ち主だ。",
 		   NULL, "Una parte de la frágil personalidad artística de mi padre era que sus emociones cambiaban tan fácilmente como el cielo de otoño. ", Line_WaitForInput);
 	OutputLine(NULL, "……単に打たれ弱いとも言うが。",
-		   NULL, "...También podría dceirse que no aguantaba las críticas. ", Line_Normal);
+		   NULL, "...También podría decirse que no aguantaba las críticas. ", Line_Normal);
 	ClearMessage();
 
 //「でも...そんなの電話でやり取りすればいいじゃないか！＠
@@ -2091,7 +2091,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100494", 256, TRUE);
 	OutputLine(NULL, "「その、大石さん、…やっぱり俺、……命を狙われているみたいです。」",
-		   NULL, "\"Bueno, Ooishi-san... perece que... hay alguien tras de mí.\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Bueno, Ooishi-san... parece que... hay alguien tras de mí.\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2224,7 +2224,7 @@ void main()
 	OutputLine(NULL, "　確か…針はおはぎと一緒に壁に投げつけた。",
 		   NULL, "En definitiva... arrojé a la pared el ohagi junto con la aguja. ", Line_WaitForInput);
 	OutputLine(NULL, "あるとすれば…やはり居間のあの壁！",
-		   NULL, "Si está en  algún lugar... ¡es en la pared de la sala! ", Line_Normal);
+		   NULL, "Si está en algún lugar... ¡es en la pared de la sala! ", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/ma_d1", "left", 0, 0, 300 );
@@ -3120,7 +3120,7 @@ void main()
 //　お袋は具合が悪いと言って今日は早めに寝てしまいました...＠...無難な辺りか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お袋は具合が悪いと言って今日は早めに寝てしまいました…。",
-		   NULL, "Simplemente le diré que Mamá no se siente bien y que acostó temprano... ", Line_WaitForInput);
+		   NULL, "Simplemente le diré que Mamá no se siente bien y que se acostó temprano... ", Line_WaitForInput);
 	OutputLine(NULL, "…無難な辺りか。",
 		   NULL, "Iré a lo seguro. ", Line_Normal);
 	ClearMessage();
@@ -3934,7 +3934,7 @@ void main()
 //　だが...無視することで忘れようとしている感覚が......背筋をじわりじわりと登ってくる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが…無視することで忘れようとしている感覚が……背筋をじわりじわりと登ってくる。",
-		   NULL, "Sin embargo... el sentimiento que trataba de ignorar... empezó a reptar por mi espala una vez más. ", Line_Normal);
+		   NULL, "Sin embargo... el sentimiento que trataba de ignorar... empezó a reptar por mi espalda una vez más. ", Line_Normal);
 	ClearMessage();
 
 //　俺はお袋が夕飯を今まさに並べてくれているように話しているのだが......レナと話が噛み合わない＠
@@ -5377,7 +5377,7 @@ void main()
 //　レナの白い指先は真っ赤になり、もはや蠢きもしなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナの白い指先は真っ赤になり、もはや蠢きもしなかった。",
-		   NULL, "Los blancos dedos de Rena se habían tordnado de un rojo oscuro, ya ni siquiera se movían. ", Line_Normal);
+		   NULL, "Los blancos dedos de Rena se habían tornado de un rojo oscuro, ya ni siquiera se movían. ", Line_Normal);
 	ClearMessage();
 
 //「ごめんなさい＠ごめんなさい＠ごめんなさい...、＠
@@ -5470,7 +5470,7 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "やめろやめろやめろ！！！",
-		   NULL, "¡¡DETENTE DETENTE DETENTE!!! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "¡¡YA VETEEEEEEEE!!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -5483,7 +5483,7 @@ void main()
 //　やがて、何かの拍子に一気にレナの指が扉の枷から外れた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがて、何かの拍子に一気にレナの指が扉の枷から外れた。",
-		   NULL, "Finalmente, sus dedos lograron liberarse de su aprisionamiento entre la puerta. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Finalmente, sus dedos lograron liberarse de su aprisionamiento entre la puerta y el marco. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();

@@ -2475,7 +2475,7 @@ void main()
 //　いや、俺に足音が聞き取れたように、相手も俺の足音を聞き取っているだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、俺に足音が聞き取れたように、相手も俺の足音を聞き取っているだろう。",
-		   NULL, "No... pude escuchar sus pisadas, probablemente también pudo escuchar las mías. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No,... pude escuchar sus pisadas, probablemente también pudo escuchar las mías. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3417,7 +3417,7 @@ void main()
 		   NULL, "\"¡N-No estoy asustado! ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100700", 256, TRUE);
 	OutputLine(NULL, "　何も怖いことなんか、」",
-		   NULL, "No me asusta nadag—\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No me asusta nada—\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3700,7 +3700,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200393", 256, TRUE);
 	OutputLine(NULL, "「悩みがなくなればきっと圭一くんも元通り。",
-		   NULL, "\"Si Keiichi-kun no tiene nada de que preocuparse, entonces volverá a la normalidad. ", Line_WaitForInput);
+		   NULL, "\"Si Keiichi-kun no tiene nada de qué preocuparse, entonces volverá a la normalidad. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200394", 256, TRUE);
 	OutputLine(NULL, "みんなとも仲良しに戻れて、また楽しく部活ができるよ。",
 		   NULL, "Todos volveremos a ser amigos y podremos disfrutar de las actividades del club una vez más. ", Line_WaitForInput);
@@ -4186,7 +4186,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "“いる”",
-		   NULL, "'existe,' ", Line_Continue);
+		   NULL, "<i>existe</i>, ", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -4253,7 +4253,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200417", 256, TRUE);
 	OutputLine(NULL, "「“いる”よ。",
-		   NULL, "\"Pero 'existe'. ", Line_WaitForInput);
+		   NULL, "\"Pero <i>existe</i>. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200418", 256, TRUE);
 	OutputLine(NULL, "オヤシロさま。",
 		   NULL, "Oyashiro-sama existe. ", Line_WaitForInput);
@@ -5309,7 +5309,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700483", 256, TRUE);
 	OutputLine(NULL, "「書面で申請しろと言われました。",
-		   NULL, "\"Me dijo que consiguiera ona orden. ", Line_WaitForInput);
+		   NULL, "\"Me dijo que consiguiera una orden. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700484", 256, TRUE);
 	OutputLine(NULL, "手帳自体に法的拘束力は何もありませんからねぇ…。」",
 		   NULL, "La placa no tiene ninguna autoridad legal...\" ", Line_Normal);
@@ -6425,7 +6425,7 @@ void main()
 //　脱兎のごとくという言葉がこれ以上似合うことはないだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　脱兎のごとくという言葉がこれ以上似合うことはないだろう。",
-		   NULL, "Como dirían por ahí: \"corre como el viento\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Como dirían por ahí: \"corre como el viento.\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -6912,14 +6912,14 @@ void main()
 //　右、!w1000左！！！/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　右、",
-		   NULL, "¡¡¡Derecha, ", Line_ContinueAfterTyping);
+		   NULL, "...Derecha, ", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "左！！！",
-		   NULL, "izquierda!!! ", Line_ContinueAfterTyping);
+		   NULL, "¡¡¡izquierda!!! ", Line_ContinueAfterTyping);
 	PlaySE( 4, "wa_008", 56, 64 );
 
 	SetValidityOfInput( FALSE );
@@ -6960,7 +6960,7 @@ void main()
 //　...俺の姿を瞬間的に見失い、俺を組み伏せようとして繰り出した両の手が空を切る＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺の姿を瞬間的に見失い、俺を組み伏せようとして繰り出した両の手が空を切る！",
-		   NULL, "...¡Me perdieron de vista momentáneamente, estiraron sus brazos—listos para atraparme—pero solo encontraron espacio vacío! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...¡Me pasaron de largo perdiéndome de vista momentáneamente, estiraron sus brazos—listos para atraparme—pero solo encontraron espacio vacío! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

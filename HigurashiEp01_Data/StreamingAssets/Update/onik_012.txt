@@ -693,9 +693,9 @@ void main()
 //　鷹野さんって言うのか＠　……富竹さんの連れの女性は＠そして…この診療所に勤めていたのか…！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんって言うのか？",
-		   NULL, "¿Así que su nombre era Takano-san? ", Line_WaitForInput);
+		   NULL, "¿Así que Takano-san... ", Line_WaitForInput);
 	OutputLine(NULL, "　……富竹さんの連れの女性は。",
-		   NULL, "...El de la mujer que andaba con Tomitake-san. ", Line_WaitForInput);
+		   NULL, "... era el nombre de la mujer que andaba con Tomitake-san? ", Line_WaitForInput);
 	OutputLine(NULL, "そして…この診療所に勤めていたのか…！？",
 		   NULL, "¿¡Y... trabajaba en esta clínica...!? ", Line_Normal);
 	ClearMessage();
@@ -2453,7 +2453,7 @@ void main()
 		   NULL, "\"Según el registro de residentes, la familia Ryuugu solía vivir en Hinamizawa. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700295", 256, TRUE);
 	OutputLine(NULL, "レナさんがちょうど小学校に上がるときに茨城へ引っ越されたんです。」",
-		   NULL, "Rena-san se mudó a Ibaraki cuando terminó la primaria.\" ", Line_Normal);
+		   NULL, "Rena-san se mudó a Ibaraki cuando empezó la primaria.\" ", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2877,7 +2877,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100316", 256, TRUE);
 	OutputLine(NULL, "「圧力って…何のですか。」",
-		   NULL, "\"Presión... ¿De qiuén?\" ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Presión... ¿De quién?\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3655,7 +3655,7 @@ void main()
 //　ぴくっと反応し、魅音を見上げてぎょっとした＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ぴくっと反応し、魅音を見上げてぎょっとした。",
-		   NULL, "Estaba intimidado por su pregunta. En cuanto vi a Mion, se me abrieron los ojos de par en par. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Su pregunta me intimidó. En cuanto vi a Mion, se me abrieron los ojos de par en par. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4372,7 +4372,7 @@ void main()
 //　たまたま俺と同席が雛見沢の人間じゃなかったから興味を覚えられただけで……別に…他意なんかないのかもしれない…＠そうだ、そうに違いない…￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　たまたま俺と同席が雛見沢の人間じゃなかったから興味を覚えられただけで……別に…他意なんかないのかもしれない…。",
-		   NULL, "Únicamente tenían curiosidad porque estaba con alguien que no es de Hinamizawa... Tan vez... no tenían malas intenciones... ", Line_WaitForInput);
+		   NULL, "Únicamente tenían curiosidad porque estaba con alguien que no es de Hinamizawa... Tal vez... no tenían malas intenciones... ", Line_WaitForInput);
 	OutputLine(NULL, "そうだ、そうに違いない…！",
 		   NULL, "Eso es. ¡Eso debe ser...! ", Line_Normal);
 	ClearMessage();
@@ -4983,7 +4983,7 @@ void main()
 //　使っている材料はまったく同じなのだから味に大差はない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　使っている材料はまったく同じなのだから味に大差はない。",
-		   NULL, "Los ingredientes son exactamente los mismos, así que no hy mucha diferencia en el sabor. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Los ingredientes son exactamente los mismos, así que no hay mucha diferencia en el sabor. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

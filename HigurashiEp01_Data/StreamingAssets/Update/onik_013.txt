@@ -445,7 +445,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0, );
 
 	OutputLine(NULL, "という言葉がねっとりと脳裏に蘇った。",
-		   NULL, "...La frase regresó a mi cabeza para atormentarme. ", Line_Normal);
+		   NULL, "...La frase regresó a mi cabeza para atormentarme. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -508,7 +508,7 @@ void main()
 	OutputLine(NULL, "　じゃあ……",
 		   NULL, "Bueno... ", Line_ContinueAfterTyping);
 	OutputLine(NULL, "俺がいつも通りに生活するなら……",
-		   NULL, "si tan solo actúo con normalidad... ", Line_Normal);
+		   NULL, "si tan solo actúo con normalidad... ", Line_WaitForInput);
 
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
@@ -2897,7 +2897,7 @@ void main()
 //　レナたちを疑いながらも…同時にかばうような、そんな二律背反の気持ちはさっきからずっとあった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナたちを疑いながらも…同時にかばうような、そんな二律背反の気持ちはさっきからずっとあった。",
-		   NULL, "He sentido estos sentimientos contradictorios desde hace rato. A pesar de que sospecho de ellas... siento que debo encubrirlas. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "He tenido estos sentimientos contradictorios desde hace rato. A pesar de que sospecho de ellas... siento que debo encubrirlas. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

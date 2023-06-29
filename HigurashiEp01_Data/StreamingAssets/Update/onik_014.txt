@@ -1392,7 +1392,7 @@ void main()
 //　有事の際には自らの椅子を振り回すくらいしかないのだろうか…＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　有事の際には自らの椅子を振り回すくらいしかないのだろうか…。",
-		   NULL, "En caso de emergencia, no podía hacer más que defenderme con mi propia silla... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En caso de emergencia, no podría hacer más que defenderme con mi propia silla... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1407,7 +1407,7 @@ void main()
 //　魅音が部活の備品と称してゲームを大量にしまい込んでいるロッカーもそのひとつだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音が部活の備品と称してゲームを大量にしまい込んでいるロッカーもそのひとつだ。",
-		   NULL, "Entre ellos estaba el casillero que Mion utilizaba para guardar si montaña de juegos. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Entre ellos estaba el casillero que Mion utilizaba para guardar su montaña de juegos. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3836,12 +3836,12 @@ void main()
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……………え…",
-		   NULL, "¿Eh...?\" ", Line_Continue);
+		   NULL, "¿Eh...", Line_Continue);
 
 	SetSpeedOfMessage( FALSE, 0, );
 
 	OutputLine(NULL, "？」",
-		   NULL, "??? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "???\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

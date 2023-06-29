@@ -4833,7 +4833,7 @@ void main()
 	OutputLine(NULL, "　……親父に隠さなければならない話ではないが、",
 		   NULL, "...No es algo que tenga que ocultarle a mi padre... ", Line_WaitForInput);
 	OutputLine(NULL, "…警察の刑事（なのかな？）と夜に電話しているなんて、うまく説明できない。",
-		   NULL, "¿Pero cómo podría explicarle que estaba hablando con un detective (Asumo que eso es) a estas horas de la noche? ", Line_Normal);
+		   NULL, "¿Pero cómo podría explicarle que estaba hablando con un detective (asumo que eso es) a estas horas de la noche? ", Line_Normal);
 	ClearMessage();
 
 

@@ -37,7 +37,7 @@ void main()
 		   NULL, "Sin duda alguna fue con las uñas del sujeto. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200003", 256, TRUE);
 	OutputLine(NULL, "傷の形も一致する。」",
-		   NULL, "La forma de las cicatrices también encaja.\" ", Line_Normal);
+		   NULL, "La forma de las heridas también encaja.\" ", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
@@ -116,7 +116,7 @@ void main()
 //　...形状その他から素手の暴行によるもの、それも複数人に囲まれてであることは明白だ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…形状その他から素手の暴行によるもの、それも複数人に囲まれてであることは明白だ。",
-		   NULL, "...Por la forma de estas queda claro que primero fue atacado por una o varias personas. ", Line_Normal);
+		   NULL, "...Por la forma de éstas queda claro que primero fue atacado por una o varias personas. ", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 5, "up", 0, FALSE, 0, 0, 1300, TRUE );

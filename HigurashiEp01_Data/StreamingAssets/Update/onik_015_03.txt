@@ -1888,7 +1888,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まるで隠蔽するかのように、",
-		   NULL, "Como si tratase de esconderla, ", Line_ContinueAfterTyping);
+		   NULL, "Como si hubiera tratado de esconderla, ", Line_ContinueAfterTyping);
 
 // !s100
 
@@ -1898,7 +1898,7 @@ void main()
 	PlayBGM( 2, "lsys24", 56, 0 );
 
 	OutputLine(NULL, "壁時計の裏に貼られ、隠されていた。",
-		   NULL, "Esta se encontraba pegada a la parte trasera del reloj en su pared. ", Line_ContinueAfterTyping);
+		   NULL, "ésta se encontraba pegada a la parte trasera del reloj en su pared. ", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
